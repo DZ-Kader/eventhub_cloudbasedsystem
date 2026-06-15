@@ -13,7 +13,7 @@ function MyEvents() {
                 localStorage.getItem("token");
 
             const res = await axios.get(
-                "http://localhost:5000/api/events/mine",
+                "https://eventhub-backend-dmsu.onrender.com/api/events/mine",
                 {
                     headers: {
                         Authorization: token
@@ -34,7 +34,7 @@ function MyEvents() {
             localStorage.getItem("token");
 
         await axios.delete(
-            `http://localhost:5000/api/events/${id}`,
+            `https://eventhub-backend-dmsu.onrender.com/api/events/${id}`,
             {
                 headers: {
                     Authorization: token
